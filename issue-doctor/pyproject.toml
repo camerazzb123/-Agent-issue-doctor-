@@ -1,0 +1,19 @@
+[project]
+name = "issue-doctor"
+version = "0.1.0"
+description = "GitHub Issue 智能诊断与自动修复 Agent 原型"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [ { name = "issue-doctor team" } ]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+
+[project.scripts]
+issue-doctor = "issue_doctor.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
